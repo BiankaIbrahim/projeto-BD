@@ -1,8 +1,8 @@
-<h1 align="center">Projeto de banco de dados - Restaurante Outback🍽</h1> 
+<h1 align="center">Projeto de Banco de Dados - Restaurante Outback🍽</h1> 
 
-> Projeto realizado na disciplina de Banco de Dados I, do curso ADS - IFPE.<br>
+> Projeto realizado na disciplina de Banco de Dados I do curso ADS - IFPE.<br>
 > Para mais detalhes: [Orientações sobre o projeto em pdf.](https://github.com/BiankaIbrahim/projeto-BD/files/13836834/BD1.-.Orientacoes.sobre.o.projeto.da.2.Unidade.pdf)<br>
-> Equipe: [Bianka Ibrahim](https://www.linkedin.com/in/biankaibrahim/), [George Monteiro](https://www.linkedin.com/in/george-monteiro-7051ba28b/), [Pedro Lima](https://www.linkedin.com/in/pedro-lima-135913254/)
+
 ## MiniMundo - Gerenciamento de um Restaurante
 
 Flávio, dono do restaurante Outback, deseja modernizar mais o seu restaurante, então contratou os serviços de uma empresa de TI para modelar o banco de dados do restaurante, após o levantamento inicial dos requisitos, as informações levantadas foram as seguintes:  
@@ -19,7 +19,7 @@ Flávio, dono do restaurante Outback, deseja modernizar mais o seu restaurante, 
 ### MER
 ![](https://github.com/BiankaIbrahim/projeto-BD/assets/84330067/44bf9538-a203-423b-861c-23ea511549f0)
 
-### MODELO RELACIONAL
+### Modelo Relacional
 ![](https://github.com/BiankaIbrahim/projeto-BD/assets/84330067/339069b1-6bf2-4b4e-b3b6-91a8231de2e2)
 
 ### SQL
@@ -79,7 +79,7 @@ CREATE TABLE item_pedido (
 );
 ```
 
-### COMANDOS INSERT
+### Comandos INSERT
 ```sql
 INSERT INTO restaurante(nome_restaurante, cnpj_restaurante) VALUES ("OUTBACK", 12345678912345);
 
@@ -110,7 +110,7 @@ INSERT INTO item_pedido(id_item, nome_item, valor_item, id_pedido_fk) VALUES  (2
 INSERT INTO item_pedido(id_item, nome_item, valor_item, id_pedido_fk) VALUES  (3, "coca", 8.00, 2);
 ```
 
-### COMANDOS SELECT
+### Comandos SELECT
 ```sql
 SELECT nome_funcionario, funcao 
 FROM funcionarios;
@@ -139,7 +139,7 @@ FROM restaurante
 INNER JOIN funcionarios
 ON cnpj_restaurante = cnpj_restaurante_fk;
 ```
-### COMANDOS UPDATE
+### Comandos UPDATE
 ```sql
 UPDATE funcionarios SET nome_funcionario = "Otavio Santos"
 WHERE prontuario = 123
@@ -148,9 +148,12 @@ UPDATE item_pedido SET valor_item = 13.00
 WHERE id_item = 1
 ```
 
-### COMANDOS DELETE
+### Comandos DELETE
 ```sql
 DELETE FROM funcionarios WHERE prontuario = 123;
 
 DELETE FROM item_pedido WHERE id_item = 1;
 ```
+### Equipe
+| [<img loading="lazy" src="https://media.licdn.com/dms/image/D4D03AQGylPaWlxxouw/profile-displayphoto-shrink_800_800/0/1696597215298?e=1709769600&v=beta&t=-btTBYIYIAadErRcDQ7SFlta5EaKGZpnxdgvrgUMQ-0" width=115><br><sub>Bianka Ibrahim</sub>](https://github.com/BiankaIbrahim) | [<img loading="lazy" src="https://media.licdn.com/dms/image/D5603AQGW4QfoH9JEQA/profile-displayphoto-shrink_800_800/0/1693519239770?e=1709769600&v=beta&t=Dc3gnhdaF3h4kpNuQtJSNvmmyXNfUjCdCRX1oDjiQjA" width=115><br><sub>George Monteiro</sub>](https://www.linkedin.com/in/george-monteiro-7051ba28b/) |  [<img loading="lazy" src="https://media.licdn.com/dms/image/D4D03AQHSTLONsirO6g/profile-displayphoto-shrink_800_800/0/1689303570957?e=1709769600&v=beta&t=x2XrUkB3EwWl0RwztSY4Va5sL56bPlbRtras_EasJmc" width=115><br><sub>Pedro Lima</sub>](https://www.linkedin.com/in/pedro-lima-135913254/) | 
+| :---: | :---: | :---: |  
